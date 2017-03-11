@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INVITE</title>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+<div id='container'>
+
+    <div id="upperBackground">
+        <div id="upper">
+            <div id="logo">
+                <img src="./images/mainPage/inviteLogo.jpg" alt="Image not found">
+            </div>
+
+            <div id="contactInput">
+                <table id="contactInputTable">
+                    <tr>
+                        <td colspan="3">
+                            <!--<form>-->
+                            <input type="text" id="inputNumbersList" placeholder="Enter numbers (comma seperated)"
+                                   autocomplete autofocus>
+                            <button type="button" id="addToListBtn">ADD to list</button>
+                            <!--</form>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form enctype="multipart/form-data" method="post" action="/contactUpload">
+                                <input type="file" name="Contacts File" accept=".csv">
+                                <input type="submit" value="submit" id="submit">
+                            </form>
+                            <!--<button>Upload Contacts</button>-->
+                        </td>
+                        <td>
+                            <button>Get from google contacts</button>
+                        </td>
+                        <td>
+                            <button>Get from outlook contacts</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="numPad">
+                <div>
+                    <span>
+                        <img src="images/mainPage/numberPad.png">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lower">
+
+        <div id="selectedContacts">
+            <div>
+                <h2>Selected Contacts</h2>
+                <ul id="selectedContactsList">
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="messaging">
+
+            <div id="msg">
+                <textarea id="msgBox" required placeholder="Type your message here" maxlength="150" rows="7"
+                          cols="25"></textarea>
+            </div>
+
+            <div id="msgLinks">
+                <button type="button">Add directions link</button>
+                <button type="button">Add Calendar event link</button>
+            </div>
+
+            <div id="send">
+                <button type="button" id="sendBtn">SEND</button>
+            </div>
+
+            <div id="templates">
+                <button type="button">Message Templates</button>
+            </div>
+
+        </div>
+
+        <div id="yourContacts">
+            <div>
+                <h2>Your Contacts</h2>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div id="gif">
+    <div>
+        <iframe src="//giphy.com/embed/lnJ2SkDevxGms" width="480" height="360" frameBorder="0" class="giphy-embed"
+                allowFullScreen></iframe>
+    </div>
+</div>
+
+</body>
+</html>

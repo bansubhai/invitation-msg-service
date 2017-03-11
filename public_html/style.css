@@ -1,0 +1,212 @@
+
+body {
+    margin: 0px;
+    background: #e9ebee;
+}
+
+/*upper part*/
+
+#upperBackground {
+    height: 250px;
+    background: url("./images/mainPage/upperBackground2.jpg");
+    background-size: 100% 150%;
+}
+
+#upper {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#logo { /*logo*/
+    box-sizing: border-box;
+    padding-top: 40px;
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#logo img {
+    width: 100%;
+}
+
+#contactInput { /*contact input*/
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    width: 59%;
+    vertical-align: top;
+}
+
+#contactInputTable {
+    margin: 0 auto;
+    padding-top: 100px;
+    height: 100%;
+    text-align: center;
+}
+
+#contactInputTable td {
+    width: 33%;
+    text-align: center;
+}
+
+#contactInputTable tr:first-child form {
+    height: 100%;
+}
+
+#contactInputTable tr:first-child input {
+    font-size: 22px;
+    width: 60%;
+    height: 35px;
+}
+
+#contactInputTable tr:first-child button {
+    position: relative;
+    left: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    /*width: 50%;*/
+    height: 35px;
+}
+
+#contactInputTable tr:last-child button {
+    width: 90%;
+    height: 40px;
+    text-align: center;
+}
+
+#numPad { /*NumPad*/
+    box-sizing: border-box;
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#numPad > div {
+    display: table;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+#numPad span {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+
+#numPad img {
+    background-color: aqua;
+    height: 70%;
+}
+
+/*Lower part*/
+
+#lower {
+    width: 1210px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*selected contacts*/
+
+#selectedContacts {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    height: 100%;
+    width: 25%;
+    background-color: #54c442;
+}
+
+#selectedContactsList {
+    text-align: left;
+}
+
+/*Messaging*/
+
+#messaging {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    height: 100%;
+    width: 49%;
+    padding-top: 20px;
+}
+
+#msg textarea {
+    font-family: "Abyssinica SIL";
+    font-size: 25px;
+    resize: none;
+}
+
+#msgLinks {
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 60px;
+}
+
+#send {
+    box-sizing: border-box;
+    height: 60px;
+    line-height: 56px;
+}
+
+#send button {
+    height: 90%;
+    width: 50%;
+    border-radius: 20px;
+    color: white;
+    background-image: url("./images/mainPage/b2.jpg");
+    background-size: cover;
+    /*background-color: orangered;*/
+}
+
+#templates {
+    padding-top: 30px;
+    height: 60px;
+}
+
+#templates button {
+    width: 70%;
+    height: 90%;
+    color: white;
+    border-radius: 10px;
+    background-color: mediumblue;
+}
+
+/*Your contacts*/
+
+#yourContacts {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    height: 100%;
+    width: 25%;
+    background-color: #4c80d3;
+}
+
+/*Sending Animation*/
+
+#gif {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+    display: none;
+    height: 800px;
+    width: 100%;
+}
+
+#gif > div {
+    /*position: absolute;*/
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
